@@ -1,126 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Login</title>
-    <script src="https://kit.fontawesome.com/31544df3c7.js" crossorigin="anonymous"></script>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 62.5%;
-        }
-
-        @font-face {
-            font-family: Rubik;
-            src: url('./Rubik-Regular.ttf');
-        }
-
-        body{
-            font-family: Rubik;
-            color: #333;
-        }
-
-        .container {
-            max-width: 35rem;
-            margin: 8rem auto;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .icon {
-            font-size: 5rem;
-            color: #1e90ff;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        .sign-in-options {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        button {
-            font-weight: 600;
-            border: 1px solid #333;
-            padding: 1rem;
-            border-radius: 2rem;
-            background: #fff;
-            transition: all 0.3s;
-        }
-
-        
-        button:hover {
-            background: #ccc;
-            cursor: pointer;
-        }
-
-        button.next {
-             color: #fff;
-             background: #000;
-         }
-
-        button.next:hover {
-            background: #3f3e3e;
-        }
-
-        .hr {
-            border-top: 1px solid #9e9e9e;
-            position: relative;
-        }
-
-        .hr::before{
-            content: 'or';
-            display: block;
-            font-size: 1.5rem;
-            padding: 0 1rem;
-            background: #fff;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        input {
-            padding: 1rem;
-        }
-
-        p {
-            font-size: 1.4rem;
-        }
-
-        a {
-            text-decoration: none;
-            color: #1e90ff;
-        }
-
-    </style>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/31544df3c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
     <div class="container">
-        <div class="icon">
-            <i class="fa fa-user-circle-o"></i>
-        </div>
-        <h2>Welcome Back, Sign In To Continue</h2>
-        <div class="sign-in-options">
-            <button class="sign-in-google"><i class="fa fa-google"></i> Sign In With Google</button>
-            <button class="sign-in-facebook"><i class="fa fa-facebook"></i> Sign In With Facebook</button>
-            <div class="hr"></div>
-            <input name="username" placeholder="Username" type="text">
-            <button class="next">Next</button>
-            <button class="forgot-password">Forgot Password?</button>
-        </div>
-        <p>Don't Have An Account Yet? <a href="#">Sign Up</a></p>
+      <div class="icon">
+        <i class="fa fa-user-circle-o"></i>
+      </div>
+      <h2>Welcome Back, Sign In To Continue</h2>
+      <div class="sign-in-options">
+        <button class="sign-in-google">
+          <i class="fa fa-google"></i> Sign In With Google
+        </button>
+        <button class="sign-in-facebook">
+          <i class="fa fa-facebook"></i> Sign In With Facebook
+        </button>
+        <div class="hr"></div>
+        <input name="username" placeholder="Username" type="text" />
+        <button class="next">Next</button>
+        <button class="forgot-password">Forgot Password?</button>
+      </div>
+      <p>Don't Have An Account Yet? <a href="#">Sign Up</a></p>
     </div>
-</body>
+  </body>
 </html>

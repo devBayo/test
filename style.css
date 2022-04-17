@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./Rubik-Regular.ttf");
+}
+
+body {
+  font-family: Rubik;
+  color: #333;
+}
+
+.container {
+  max-width: 35rem;
+  margin: 8rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.icon {
+  font-size: 5rem;
+  color: #1e90ff;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.sign-in-options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+button {
+  font-weight: 600;
+  border: 1px solid #333;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: #fff;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+button.next {
+  color: #fff;
+  background: #000;
+}
+
+button.next:hover {
+  background: #3f3e3e;
+}
+
+.hr {
+  border-top: 1px solid #9e9e9e;
+  position: relative;
+}
+
+.hr::before {
+  content: "or";
+  display: block;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1e90ff;
+}
+
+/* Media Query */
+@media screen and (max-width: 37.5rem) {
+  .sign-in-options,
+  .container {
+    gap: 0;
+  }
+
+  .sign-in-options > *,
+  .container > * {
+    margin-bottom: 2rem;
+  }
+  .sign-in-options {
+    margin-bottom: 0;
+  }
+}
